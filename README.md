@@ -1,0 +1,1 @@
+# Manipulating local storage and adding it to the DOM via JavaScript.  Currently this program is only able to console.log the data....needs more work.
