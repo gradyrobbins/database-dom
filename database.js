@@ -162,8 +162,26 @@ function addElement () {
   newSection.appendChild(newContent);  
 
 
-  
+
   // add the newly created element and its content into the DOM 
   var currentDiv = document.getElementById("myStuff"); 
   document.body.insertBefore(newSection, currentDiv); 
 }
+
+
+//more copy+paste from W3C schools about creating <p> and appending text:
+var para1 = document.createElement("P");                        // Create a <p> element
+var t = document.createTextNode("Name:");                       // Create a text node
+para1.appendChild(t);                                           // Append the text to <p>
+document.getElementById("myStuff").appendChild(para1);          // Append <p> to <div> with id="myStuff"
+
+var para2 = document.createElement("P");                        // Create a <p> element
+var t2 = document.createTextNode("location:");                       // Create a text node
+para2.appendChild(t2);                                           // Append the text to <p>
+document.getElementById("myStuff").appendChild(para2);          // Append <p> to <div> with id="myStuff"
+
+var para3 = document.createElement("P");                        // Create a <p> element
+var t3 = document.createTextNode("description:");                       // Create a text node
+para3.appendChild(t3);                                           // Append the text to <p>
+document.getElementById("myStuff").appendChild(para3);          // Append <p> to <div> with id="myStuff"
+
